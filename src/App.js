@@ -4,6 +4,7 @@ import axios from 'axios';
 import UserCard from './components/UserCard';
 
 import './App.css';
+import { Container } from './styles';
 
 class App extends React.Component {
   constructor() {
@@ -26,10 +27,10 @@ class App extends React.Component {
 
   render() {
     return(
-      <div>
+      <Container>
         <h1>GitHub</h1>
         <UserCard userData={this.state.userData} />
-      </div>
+      </Container>
     )
   }
 }
